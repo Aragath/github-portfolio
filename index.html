@@ -63,8 +63,12 @@
     <section class="work" id="work">
       <div class="row">
         <h2>My Work</h2>
-        <div class="work__boxes">
-          <!-- Each div with the work__box class is a project. -->
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'FullStack')">Full Stack Development</button>
+          <button class="tablinks" onclick="openTab(event, 'MachineLearning')">Machine Learning</button>
+        </div>
+        <!-- Full Stack  -->
+        <div id="FullStack" class="tabcontent">
           <!-- Stock Search Responsive Web App and Android App -->
           <div class="work__box">
             <div class="work__text">
@@ -97,62 +101,67 @@
               <img src="./images/project-1.png" class="work__image" alt="Project 1" />
             </div>
           </div>
-          <!-- Pyleoclim -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Pyleoclim: Python Package for the Analysis of Paleoclimate Data</h3>
-              <p>
-                Enhanced the open-source Pyleoclim package by integrating Local Outlier Factor (LOF) for improved anomaly detection in paleoclimate data analysis, 
-                and contributed to "PyleoTutorials" by improving documentation and creating user-friendly tutorials for wider adoption.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>Unsupervised Learning</li>
-                <li>Open-source</li>
-              </ul>
-              <div class="work__links">
-                <div class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </div>
-                <a href="https://github.com/LinkedEarth/Pyleoclim_util" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="Pyleoclim_util">
-                </a>
-                <a href="https://linked.earth/PyleoTutorials/intro.html" target="_blank">
-                  <img src="./images/project-2-2.png" class="work__code" title="View Source Code" alt="PyleoTutorials">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 2" />
-            </div>
-          </div>
-          <!-- Graph Neural Netowrk -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+        </div>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+        <!-- Machine Learning -->
+        <div id="MachineLearning" class="tabcontent">
+          <div class="work__boxes">
+            <!-- Pyleoclim -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Pyleoclim: Python Package for the Analysis of Paleoclimate Data</h3>
+                <p>
+                  Enhanced the open-source Pyleoclim package by integrating Local Outlier Factor (LOF) for improved anomaly detection in paleoclimate data analysis, 
+                  and contributed to "PyleoTutorials" by improving documentation and creating user-friendly tutorials for wider adoption.
+                </p>
+                <ul class="work__list">
+                  <li>Python</li>
+                  <li>Machine Learning</li>
+                  <li>Unsupervised Learning</li>
+                  <li>Open-source</li>
+                </ul>
+                <div class="work__links">
+                  <div class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </div>
+                  <a href="https://github.com/LinkedEarth/Pyleoclim_util" target="_blank">
+                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="Pyleoclim_util">
+                  </a>
+                  <a href="https://linked.earth/PyleoTutorials/intro.html" target="_blank">
+                    <img src="./images/project-2-2.png" class="work__code" title="View Source Code" alt="PyleoTutorials">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/project-2.png" class="work__image" alt="Project 2" />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            
+            <!-- Graph Neural Netowrk -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Advanced Soccer Match Prediction with Graph Neural Networks</h3>
+                <p>
+                  The soccer match prediction model uses a Graph Neural Network to analyze player abilities and team formations to predict match outcomes.
+                </p>
+                <ul class="work__list">
+                  <li>Python</li>
+                  <li>Machine Learning</li>
+                  <li>Graph Neural Network (GNN)</li>
+                  <li>PyTorch</li>
+                </ul>
+                <div class="work__links">
+                  <div class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </div>
+                  <a href="#" target="_blank">
+                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              </div>
             </div>
           </div>
         </div>
@@ -169,6 +178,7 @@
         </div>
       </div>
     </section>
+
     <!-- About -->
     <section class="about" id="about">
       <div class="row">

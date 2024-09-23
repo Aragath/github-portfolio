@@ -440,7 +440,62 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent; /* Inactive tab color */
+    border: 1px solid #ccc;
+    border-bottom: none; /* To connect with content below */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
 
+/* Active tab styles */
+.tab.active {
+    background-color: #007BFF; /* Active tab color */
+    color: white; /* Active tab text color */
+    font-weight: bold; /* Optional: make active tab stand out more */
+}
+
+/* Hover effect */
+.tab:hover {
+    background-color: transparent; /* Change on hover for inactive tabs */
+}
+
+.tab button {
+    flex: 1;
+    font-size: var(--font-size-small);
+    padding: 10px;
+    background-color: black; /* Match the background */
+    color: white; /* Change text color for visibility */
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab button:not(:last-child) {
+    margin-right: 1rem; /* Add space between tabs */
+}
+
+.tab button:hover {
+    border: 2px solid var(--pink);
+    background: var(--pink);
+}
+
+.tab button.active {
+    border: 2px solid var(--pink);
+    background: var(--pink);
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 2px solid var(--pink);
+}
+
+.tabcontent.active {
+    display: block; /* Show the active tab's content */
+}
+  
 .work__box {
     display: flex;
     align-items: center;
