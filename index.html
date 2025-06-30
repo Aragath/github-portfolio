@@ -1,313 +1,308 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  <title>
-    Sunny Lee | A Software Engineer and Web Developer based in Los Angeles, USA.
-  </title>
-
-  <meta name="description" content="Hi, my name is Sunny Lee (Pin-Tzu Lee) and I'm a software engineer and machine learning engineer focusing on web & mobile application development and NLP & LLM-RL respectively. I'm currently a Master's student in Computer Science at USC and is actively seeking 2025 full-time.">
-  <meta name="keywords" content="Sunny Lee, Pin-Tzu Lee, Python, Machine Learning, Angular, JavaScript, Web Application, MongoDB, Express, Node.js, Git, Jira, SVN, GitHub, Machine Learning, Graph Neural Network, LLM, LLM-RL, NLP" />
-  <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Lee | Software Engineer & ML Engineer</title>
+    <meta name="description" content="Sunny Lee (Pin-Tzu Lee) - Software Engineer and Machine Learning Engineer specializing in full-stack development, computer vision, and LLM-RL. Currently seeking 2025 full-time opportunities.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Sunny Lee</span>
-        </h1>
-        <p>A Software Engineer and Machine Learning Engineer based in Los Angeles, USA.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-    <!-- Work -->
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'FullStack')">Full Stack Development</button>
-          <button class="tablinks" onclick="openTab(event, 'MachineLearning')">Machine Learning</button>
+    <div class="bg-animation"></div>
+    <div class="scroll-indicator"></div>
+    
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Sunny Lee</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <!-- Full Stack  -->
-        <div id="FullStack" class="tabcontent">
-          <!-- Stock Search Responsive Web App and Android App -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Stock Search Responsive Web App and Android App</h3>
-              <p>
-                A responsive web app providing real-time stock data, historical charts, financial news, and personalized watchlists to help users track and analyze market trends.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>Angular</li>
-                <li>Node.js</li>
-                <li>Android</li>
-              </ul>
-              <div class="work__links">
-                <!-- <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a> -->
-                <div class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </div>
-                <a href="https://github.com/Aragath/WebTech" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-icons">
+            <div class="floating-icon">⚡</div>
+            <div class="floating-icon">🚀</div>
+            <div class="floating-icon">💻</div>
+            <div class="floating-icon">🤖</div>
+            <div class="floating-icon">⭐</div>
+            <div class="floating-icon">🔬</div>
+            <div class="floating-icon">📊</div>
+            <div class="floating-icon">🎯</div>
+            <div class="floating-icon">💡</div>
+            <div class="floating-icon">🔧</div>
+        </div>
+        <div class="hero-content">
+            <h1>Sunny Lee</h1>
+            <p class="hero-subtitle">Software Engineer & Machine Learning Engineer</p>
+            <p class="hero-description">
+                Passionate about creating intelligent solutions through full-stack development, 
+                computer vision, and cutting-edge machine learning technologies.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#work" class="btn btn-secondary">View My Work</a>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-          <!-- Online-Food-Ordering-System -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Online-Food-Ordering-System</h3>
-              <p>
-                A web app allowing customers to browse and order food while managing payments, and provides shop owners with tools to manage menus and orders securely
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Flask</li>
-              </ul>
-              <div class="work__links">
-                <!-- <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a> -->
-                <div class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </div>
-                <a href="https://github.com/pha123661/Online-Food-Ordering-System" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-4.jpeg" class="work__image" alt="Project 4" />
-            </div>
-          </div>
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+        <h2 class="section-title">My Work</h2>
+        
+        <div class="work-tabs">
+            <button class="tab-btn active" onclick="switchTab('fullstack')">Full-Stack</button>
+            <button class="tab-btn" onclick="switchTab('ml')">Machine Learning</button>
         </div>
 
-        <!-- Machine Learning -->
-        <div id="MachineLearning" class="tabcontent">
-          <div class="work__boxes">
-            <!-- Pyleoclim -->
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Pyleoclim: Python Package for the Analysis of Paleoclimate Data</h3>
-                <p>
-                  Enhanced the open-source Pyleoclim package by integrating Local Outlier Factor (LOF) for improved anomaly detection in paleoclimate data analysis, 
-                  and contributed to "PyleoTutorials" by improving documentation and creating user-friendly tutorials for wider adoption.
-                </p>
-                <ul class="work__list">
-                  <li>Python</li>
-                  <li>Machine Learning</li>
-                  <li>Unsupervised Learning</li>
-                  <li>Open-source</li>
+        <div id="fullstack" class="tab-content active">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="./images/stock-tracker-app.png" class="project-image" alt="Stock Tracker Application Interface showing multiple screens" />
+                    <h3 class="project-title">StockTracker: Full-Stack Financial Platform</h3>
+                    <p class="project-description">
+                        Responsive stock tracking application built with MEAN stack, featuring real-time data integration 
+                        and cross-platform compatibility for web and Android.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Android</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Aragath/WebTech">🔗 GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/food-ordering-system.jpeg" class="project-image" alt="Food Ordering System Interface" />
+                    <h3 class="project-title">Online Food Ordering System</h3>
+                    <p class="project-description">
+                        Comprehensive web application for food ordering with customer browsing, payment management, 
+                        and administrative tools for menu and order management.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/pha123661/Online-Food-Ordering-System">🔗 GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ml" class="tab-content">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="./images/pyleoclim-logo.png" class="project-image" alt="Pyleoclim package logo and data visualization" />
+                    <h3 class="project-title">Pyleoclim: Paleoclimate Data Analysis</h3>
+                    <p class="project-description">
+                        Enhanced open-source Python package with Local Outlier Factor (LOF) integration for 
+                        improved anomaly detection in paleoclimate time series data.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Anomaly Detection</span>
+                        <span class="tech-tag">Open Source</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/LinkedEarth/Pyleoclim_util">🔗 GitHub</a>
+                        <a href="https://linked.earth/PyleoTutorials/intro.html">📚 Tutorials</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./images/gnn-architecture.png" class="project-image" alt="Graph Neural Network architecture diagram" />
+                    <h3 class="project-title">Soccer Match Prediction with GNNs</h3>
+                    <p class="project-description">
+                        Advanced prediction model using Graph Neural Networks to analyze player abilities 
+                        and team formations for accurate match outcome predictions.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Graph Neural Networks</span>
+                        <span class="tech-tag">Sports Analytics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Aragath/FIFA-Project">🔗 GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-left">
+                        <img src="./images/northern-lights-logo.jpg" class="company-logo" alt="Northern Lights Post Inc. logo" />
+                        <div class="experience-details">
+                            <h3 class="experience-title">Data and Machine Learning Engineer</h3>
+                            <p class="experience-company">Northern Lights Post Inc.</p>
+                        </div>
+                    </div>
+                    <span class="experience-date">Jun 2025 - Present</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Architected multi-GPU distributed training pipelines, reducing training time by 60% for large-scale analysis</li>
+                    <li>Engineered vector search infrastructure using Qdrant database for semantic similarity matching</li>
+                    <li>Developed Django-based backend services with scalable ML inference endpoints</li>
                 </ul>
-                <div class="work__links">
-                  <div class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </div>
-                  <a href="https://github.com/LinkedEarth/Pyleoclim_util" target="_blank">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="Pyleoclim_util">
-                  </a>
-                  <a href="https://linked.earth/PyleoTutorials/intro.html" target="_blank">
-                    <img src="./images/project-2-2.png" class="work__code" title="View Source Code" alt="PyleoTutorials">
-                  </a>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-left">
+                        <img src="./images/northern-lights-logo.jpg" class="company-logo" alt="Northern Lights Post Inc. logo" />
+                        <div class="experience-details">
+                            <h3 class="experience-title">Machine Learning Engineer Intern</h3>
+                            <p class="experience-company">Northern Lights Post Inc.</p>
+                        </div>
+                    </div>
+                    <span class="experience-date">Jan 2025 - May 2025</span>
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/project-2.png" class="work__image" alt="Project 2" />
-              </div>
+                <ul class="experience-bullets">
+                    <li>Implemented explainable AI methodologies using YOLO and SAM2 for enhanced content interpretability</li>
+                    <li>Applied computer vision and LLM techniques to optimize content scoring platform</li>
+                    <li>Leveraged AWS infrastructure (SageMaker, S3) for processing 9M+ images and 10M+ videos</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-left">
+                        <img src="./images/asml-logo.png" class="company-logo" alt="ASML logo" />
+                        <div class="experience-details">
+                            <h3 class="experience-title">NI LabVIEW Programmer Intern</h3>
+                            <p class="experience-company">ASML</p>
+                        </div>
+                    </div>
+                    <span class="experience-date">May 2024 - Aug 2024</span>
+                </div>
+                <ul class="experience-bullets">
+                    <li>Integrated new hardware into virtual oscilloscope program, reducing operation time by 95%</li>
+                    <li>Modularized hardware code using DQMH framework, decreasing code duplication by 40%</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hi, I'm Sunny Lee (Pin-Tzu Lee), a Computer Science graduate student at USC with a passion for 
+                    developing innovative solutions through software engineering and machine learning. I have a strong 
+                    technical background spanning from responsive web applications to cutting-edge LLM-RL agents.
+                </p>
+                <br>
+                <p>
+                    I thrive in collaborative environments and am always looking for opportunities to create impactful, 
+                    scalable solutions. Currently seeking full-time opportunities starting in 2025 where I can contribute 
+                    to meaningful projects that push the boundaries of technology.
+                </p>
+                <br>
+                <a href="files/resume.pdf" class="btn btn-primary" target="_blank">📄 Download Resume</a>
+            </div>
+            <div>
+                <img src="./images/sunny-lee.jpg" alt="Sunny Lee" class="about-image">
+            </div>
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-icon">💻</div>
+                <h3 class="skill-title">Programming Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
             </div>
             
-            <!-- Graph Neural Netowrk -->
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Advanced Soccer Match Prediction with Graph Neural Networks</h3>
-                <p>
-                  The soccer match prediction model uses a Graph Neural Network to analyze player abilities and team formations to predict match outcomes.
-                </p>
-                <ul class="work__list">
-                  <li>Python</li>
-                  <li>Machine Learning</li>
-                  <li>Graph Neural Network (GNN)</li>
-                  <li>PyTorch</li>
-                </ul>
-                <div class="work__links">
-                  <div class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </div>
-                  <a href="https://github.com/Aragath/FIFA-Project" target="_blank">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                  </a>
+            <div class="skill-category">
+                <div class="skill-icon">🤖</div>
+                <h3 class="skill-title">ML/AI Frameworks</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">HuggingFace</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">OpenCV</span>
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-              </div>
             </div>
-
-            <!-- LLM-RL -->
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Enhancing Autonomous Agents: LLM-RL for Complex Task Performance</h3>
-                <p>
-                  This project aims to enhance the capabilities of autonomous agents by integrating reinforcement learning, human feedback, and large language models (LLMs) to facilitate adaptive learning and decision-making in dynamic environments
-                </p>
-                <ul class="work__list">
-                  <li>Python</li>
-                  <li>Machine Learning</li>
-                  <li>Large Language Model (LLM)</li>
-                  <li>Reinforcement Learning (RL)</li>
-                </ul>
-                <div class="work__links">
-                  <div class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </div>
-                  <a href="#" target="_blank">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                  </a>
+            
+            <div class="skill-category">
+                <div class="skill-icon">☁️</div>
+                <h3 class="skill-title">Cloud & Databases</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Qdrant</span>
+                    <span class="skill-tag">S3</span>
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/work-in-progress.png" class="work__image" alt="LLM-RL" />
-              </div>
             </div>
-          </div>
+            
+            <div class="skill-category">
+                <div class="skill-icon">🔧</div>
+                <h3 class="skill-title">Development Tools</h3>
+                <div class="skill-items">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">Node.js</span>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Clients -->
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ASML.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Hi, I'm Sunny Lee (Pin-Tzu Lee), a Computer Science graduate student at USC with a passion for developing innovative solutions through software engineering and machine learning. 
-              I have a strong technical background, having worked on projects ranging from responsive web & mobile apps to LLM-RL agents & NLPs. 
-              I thrive in collaborative environments and am always looking for opportunities to create impactful, scalable solutions.
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+            <p class="contact-description">
+                💼 Are you looking for a passionate Software Engineer or Machine Learning Engineer? 
+                Let's collaborate! I'm currently seeking full-time opportunities starting in 2025.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="files/resume.pdf" class="btn" target="_blank">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/sunny-lee.jpg" alt="" />
-          </div>
+            <a href="mailto:snylee1021@gmail.com" class="contact-email">📧 snylee1021@gmail.com</a>
         </div>
-      </div>
     </section>
-  </main>
 
-  <!--Contact -->
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a Software Engineer or Machine Learning Engineer? 
-          Let's work together! I'm currently seeking full-time opportunities starting in 2025.
-          You can reach me at the email below.
-        </p>
-        <a href="mailto:snylee1021@gmail.com" class="btn">synlee1021@gmail.com</a>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/Aragath" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/sunny-lee-0aab60275/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <!-- <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div> -->
-    </div>
-  </footer>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Aragath" title="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sunny-lee-0aab60275/" title="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+        </div>
+        <p>&copy; 2025 Sunny Lee. All rights reserved.</p>
+    </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
